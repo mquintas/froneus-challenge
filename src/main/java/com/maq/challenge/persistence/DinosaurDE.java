@@ -19,7 +19,7 @@ public class DinosaurDE {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
+    @Column(unique = true)
     private String name;
 
     @Column
@@ -33,6 +33,7 @@ public class DinosaurDE {
 
     @Column
     @Enumerated(EnumType.ORDINAL)
-    private DinoStatus status = DinoStatus.ALIVE;
+    //@Builder.Default
+    private DinoStatus status;// = DinoStatus.ALIVE;
 
 }

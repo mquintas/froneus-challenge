@@ -15,9 +15,9 @@ public class Startup implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        LOG.info("##################################");
-        LOG.info("# Inicializo                 ... #");
-        LOG.info("##################################");
+        log.info("##################################");
+        log.info("# Initializing backend       ... #");
+        log.info("##################################");
 
     }
 

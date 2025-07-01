@@ -1,6 +1,5 @@
 package com.maq.challenge.domain;
 
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
@@ -13,11 +12,8 @@ import java.time.LocalDateTime;
 @Builder
 public class Dinosaur {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
     @NotNull
     private String name;
 
@@ -29,10 +25,6 @@ public class Dinosaur {
 
     private LocalDateTime extinctionDate;
 
-    @Enumerated(EnumType.STRING)
-    private DinoStatus status = DinoStatus.ALIVE;
+    private DinoStatus status;// = DinoStatus.ALIVE;
 
-    public String getName() {
-        return null;
-    }
 }

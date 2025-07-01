@@ -5,9 +5,9 @@ import lombok.Getter;
 @Getter
 public enum DinoStatus {
 
-    ALIVE("alive"),
-    ENDANGERED("endangered"),
-    EXTINCT("extinct");
+    ALIVE("ALIVE"),
+    ENDANGERED("ENDANGERED"),
+    EXTINCT("EXTINCT");
 
     private final String status;
 

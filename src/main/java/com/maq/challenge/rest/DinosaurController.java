@@ -29,7 +29,6 @@ public class DinosaurController {
 
     @GetMapping
     public ResponseEntity<List<Dinosaur>> findAll() {
-
         List<Dinosaur> dinosaurs = service.findAll();
         return ResponseEntity.ok(dinosaurs);
     }
@@ -40,7 +39,7 @@ public class DinosaurController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Dinosaur> update(@PathVariable Long id, @Valid @RequestBody Dinosaur dinosaur) {
+    public ResponseEntity<Dinosaur> update(@PathVariable Long id, @RequestBody Dinosaur dinosaur) {
         return ResponseEntity.ok(service.update(id, dinosaur));
     }
 

@@ -12,4 +12,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MariaDBDialect
+        format_sql: true
+        generate_statistics: false
     show-sql: true
+
+logging:
+  level:
+    root: info
+    hibernate:
+      SQL: debug
+      type: trace
