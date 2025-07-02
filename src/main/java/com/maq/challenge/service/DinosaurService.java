@@ -87,4 +87,11 @@ public class DinosaurService {
     public Dinosaur findById(Long id) {
         return mapper.toDomain(repository.findById(id).orElseThrow(() -> new DinosaurNotFoundException("El Dinosaurio no existe")));
     }
+
+    public void checkDinosaurStatus() {
+
+        //TODO
+        log.info("Chequeando dinosaurios exitintos...");
+
+    }
 }
