@@ -17,6 +17,7 @@ public class DinosaurDE {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Exclude
     private Long id;
 
     @Column(unique = true)

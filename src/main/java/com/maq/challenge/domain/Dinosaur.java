@@ -6,12 +6,14 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 @Data
-@EqualsAndHashCode
+
 @Builder
 public class Dinosaur {
 
+    @EqualsAndHashCode.Exclude
     private Long id;
 
     @NotNull
