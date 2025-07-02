@@ -2,7 +2,7 @@ spring:
   application:
     name: FroneusChallenge
   datasource:
-    url: jdbc:mariadb://localhost:3306/dinosaur_db
+    url: jdbc:mariadb://mariadb:3306/dinosaur_db
     username: root
     password: root
     driver-class-name: org.mariadb.jdbc.Driver

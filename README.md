@@ -16,4 +16,13 @@
 - No se puede modificar un dinosaurio EXTINCT.
 
 #Swagger UI
-http://localhost:8080/swagger-ui/index.html
+[http://localhost:8080/swagger-ui/index.html
+]()
+
+#Para Ejecutar el proyecto:
+
+Con docker desktop levantado, ejecutar el siguiente comando en la terminal:
+
+```bash
+`./gradlew build bootRun
+`
